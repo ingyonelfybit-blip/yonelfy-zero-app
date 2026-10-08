@@ -1,0 +1,883 @@
+{
+ "rules": [
+  {
+   "code": "DO.CIVIL.CONTRATOS",
+   "name": "Contratos (Código Civil)",
+   "notes": "Referencia general; texto oficial no descargado.",
+   "domain": "civil",
+   "status": "unverified",
+   "version": "Código Civil",
+   "confidence": "UNVERIFIED",
+   "parameters": {},
+   "source_url": null,
+   "description": "Fuerza obligatoria de las convenciones",
+   "source_title": "Código Civil de la República Dominicana",
+   "effective_from": "1884-04-17",
+   "effective_until": null,
+   "legal_reference": "Código Civil dominicano, arts. 1101 y 1134 (fuerza obligatoria de las convenciones)",
+   "source_authority": "Congreso Nacional",
+   "source_provenance": "Referencia general; texto no descargado",
+   "source_retrieved_at": null
+  },
+  {
+   "code": "DO.LABOR.CESANTIA",
+   "name": "Auxilio de cesantía",
+   "notes": "Si 23 días/año aplica a todos los años o solo después del quinto depende de jurisprudencia (NO VERIFICADO).",
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "brackets": [
+     {
+      "dias": 6,
+      "desde_meses": 3,
+      "hasta_meses": 6
+     },
+     {
+      "dias": 13,
+      "desde_meses": 6,
+      "hasta_meses": 12
+     },
+     {
+      "desde_anios": 1,
+      "hasta_anios": 5,
+      "dias_por_anio": 21
+     },
+     {
+      "desde_anios": 5,
+      "dias_por_anio": 23
+     }
+    ]
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Días de cesantía según antigüedad",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1992-05-29",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 arts. 80, 82, 84, 85, 86",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LABOR.DAILY_DIVISOR",
+   "name": "Divisor del salario diario",
+   "notes": null,
+   "domain": "labor",
+   "status": "verified",
+   "version": "Reglamento 258-93 (mod. Dec. 565-99)",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "weekly_divisor": "5.5",
+    "monthly_divisor": "23.83",
+    "biweekly_divisor": "11.91"
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "23.83 para salario mensual",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1999-12-30",
+   "effective_until": null,
+   "legal_reference": "Reglamento 258-93 arts. 14(e), 32(d), 34(d), mod. Decreto 565-99",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LABOR.JORNADA_PREMIUMS",
+   "name": "Jornada y recargos",
+   "notes": "Los recargos son mínimos («no menor»).",
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "night_premium": "0.15",
+    "max_daily_hours": 8,
+    "max_weekly_hours": 44,
+    "weekly_rest_hours": 36,
+    "overtime_premium_over_68h_week": "1.00",
+    "overtime_premium_up_to_68h_week": "0.35"
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Límites de jornada, descanso semanal y recargos mínimos",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1992-05-29",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 arts. 147, 148, 149, 163, 164, 165, 203, 204, 205; Reglamento 258-93 art. 34",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LABOR.PARTICIPACION_BENEFICIOS",
+   "name": "Participación en los beneficios",
+   "notes": "Solo trabajadores por tiempo indefinido.",
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "share_of_net_profits": "0.10",
+    "cap_days_3_plus_years": 60,
+    "cap_days_under_3_years": 45
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Bonificación anual",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1992-05-29",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 arts. 223-227; Reglamento 258-93 art. 32",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LABOR.PREAVISO",
+   "name": "Preaviso",
+   "notes": "El tratamiento exacto en los límites de 3/6/12 meses está por definir.",
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "brackets": [
+     {
+      "dias": 7,
+      "desde_meses": 3,
+      "hasta_meses": 6
+     },
+     {
+      "dias": 14,
+      "desde_meses": 6,
+      "hasta_meses": 12
+     },
+     {
+      "dias": 28,
+      "desde_meses": 12
+     }
+    ]
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Días de preaviso según antigüedad (desahucio)",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1992-05-29",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 arts. 76, 78, 79, 85, 86",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LABOR.SALARIO_NAVIDAD",
+   "name": "Salario de Navidad",
+   "notes": "Qué salario mínimo define el tope de 5 veces: NO VERIFICADO.",
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "formula": "salario ordinario devengado en el año / 12",
+    "payment_deadline": "20 de diciembre",
+    "cap_multiple_of_minimum_wage": 5
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Duodécima parte del salario ordinario del año",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1992-05-29",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 arts. 219-222",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LABOR.VACACIONES",
+   "name": "Vacaciones",
+   "notes": null,
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92 (mod. Ley 97-97)",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "day_type": "working_days",
+    "days_1_to_5_years": 14,
+    "days_5_plus_years": 18
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Días de vacaciones por antigüedad",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1997-01-01",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 art. 177 (mod. Ley 97-97), arts. 178-182, 184",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.LEAVE.ART54",
+   "name": "Licencias pagadas (art. 54)",
+   "notes": null,
+   "domain": "labor",
+   "status": "verified",
+   "version": "Ley 16-92",
+   "confidence": "VERIFIED_OFFICIAL",
+   "parameters": {
+    "marriage_days": 5,
+    "paternity_days": 2,
+    "bereavement_days": 3
+   },
+   "source_url": "https://mt.gob.do/wp-content/uploads/2024/07/codigo_de_trabajo.pdf",
+   "description": "Matrimonio, duelo, paternidad",
+   "source_title": "Código de Trabajo, Ley 16-92, y Reglamento 258-93",
+   "effective_from": "1992-05-29",
+   "effective_until": null,
+   "legal_reference": "Ley 16-92 art. 54",
+   "source_authority": "Ministerio de Trabajo",
+   "source_provenance": "ingyonelfybit-blip/yonelfy-one@ff9c767:docs/legal/dr-legal-rules-2026-09.json (VERIFIED_OFFICIAL)",
+   "source_retrieved_at": "2026-09-24"
+  },
+  {
+   "code": "DO.ISR.RET.PF_SERVICIOS",
+   "name": "Retención de ISR a personas físicas",
+   "notes": "Tasa tomada de la publicación DGII localizada por búsqueda; confirmar con el texto oficial antes de marcar verificada.",
+   "domain": "tax",
+   "status": "unverified",
+   "version": "Ley 11-92 art. 309",
+   "confidence": "DOCUMENTED_CLAIM",
+   "parameters": {
+    "rate": "0.10",
+    "applies_to": "personas físicas sin relación de dependencia",
+    "withholding_agents": "personas jurídicas y negocios de único dueño"
+   },
+   "source_url": "https://dgii.gov.do/publicacionesOficiales/bibliotecaVirtual/contribuyentes/retencionesRetribucionesComplementarias/Documents/Retenciones-ISR-ITBIS.pdf",
+   "description": "Honorarios, comisiones, alquileres y servicios de personas físicas sin relación de dependencia",
+   "source_title": "Retenciones ISR-ITBIS (publicación DGII)",
+   "effective_from": "1992-05-16",
+   "effective_until": null,
+   "legal_reference": "Ley 11-92 (Código Tributario) art. 309; Reglamento del Título II",
+   "source_authority": "DGII",
+   "source_provenance": "Localizada por búsqueda el 2026-09-29; texto no descargado (red del entorno bloquea dgii.gov.do)",
+   "source_retrieved_at": null
+  },
+  {
+   "code": "DO.ITBIS.RET.PF",
+   "name": "Retención del ITBIS a personas físicas",
+   "notes": "Confirmar número de norma, vigencia y excepciones con el texto oficial.",
+   "domain": "tax",
+   "status": "unverified",
+   "version": "Normas Generales DGII",
+   "confidence": "DOCUMENTED_CLAIM",
+   "parameters": {
+    "applies_to": "bienes y servicios gravados provistos por personas físicas",
+    "rate_of_itbis": "1.00"
+   },
+   "source_url": "https://dgii.gov.do/publicacionesOficiales/bibliotecaVirtual/contribuyentes/retencionesRetribucionesComplementarias/Documents/Retenciones-ISR-ITBIS.pdf",
+   "description": "ITBIS facturado por personas físicas a personas jurídicas",
+   "source_title": "Retenciones ISR-ITBIS (publicación DGII)",
+   "effective_from": "2005-01-01",
+   "effective_until": null,
+   "legal_reference": "Normas Generales de la DGII sobre retención del ITBIS (número y vigencia por confirmar)",
+   "source_authority": "DGII",
+   "source_provenance": "Localizada por búsqueda el 2026-09-29; texto no descargado (red del entorno bloquea dgii.gov.do)",
+   "source_retrieved_at": null
+  },
+  {
+   "code": "DO.ITBIS.RET.PJ_SERVICIOS",
+   "name": "Retención del ITBIS entre personas jurídicas (servicios)",
+   "notes": "Requiere análisis artículo por artículo (docs/LEGAL_MATRIX.csv DO.ITBIS.NG_02_2026).",
+   "domain": "tax",
+   "status": "unverified",
+   "version": "NG 02-2026",
+   "confidence": "DETECTED",
+   "parameters": {
+    "rule": "no aplicar una regla universal de 30 % a servicios entre personas jurídicas cuando el proveedor emite e-CF"
+   },
+   "source_url": "https://www.dgii.gov.do/legislacion/normasGenerales/Documents/NG%20sobre%20Impuesto%20sobre%20Transferencias%20de%20Bienes%20Industrializados%20y%20Servicios%20%28ITBIS%29/Norma02-26.pdf",
+   "description": "Limitada por la NG 02-2026 cuando el proveedor emite e-CF",
+   "source_title": "Norma General 02-2026 sobre retenciones de ITBIS",
+   "effective_from": "2026-09-16",
+   "effective_until": null,
+   "legal_reference": "Norma General 02-2026 (DGII)",
+   "source_authority": "DGII",
+   "source_provenance": "docs/LEGAL_MATRIX.csv DO.ITBIS.NG_02_2026 (DETECTED)",
+   "source_retrieved_at": null
+  }
+ ],
+ "templates": [
+  {
+   "id": "7b5db060-636a-4e77-8b5f-66b68cb1db00",
+   "body": "# CONTRATO DE TRABAJO POR TIEMPO INDEFINIDO\n\nEntre **{{empresa.razon_social}}**, RNC {{empresa.rnc}}, con domicilio en {{empresa.direccion}}, debidamente representada por {{representante_nombre}}, en calidad de {{representante_cargo}}, quien en lo adelante se denominará **EL EMPLEADOR**; y **{{trabajador_nombre}}**, de nacionalidad {{trabajador_nacionalidad}}, mayor de edad, portador(a) del documento de identidad No. {{trabajador_documento}}, domiciliado(a) en {{trabajador_direccion}}, quien en lo adelante se denominará **EL TRABAJADOR**; se ha convenido y pactado el presente contrato de trabajo, regido por el Código de Trabajo de la República Dominicana (Ley 16-92) y su Reglamento (Decreto 258-93).\n\n## PRIMERO — Objeto y puesto\nEL TRABAJADOR se compromete a prestar sus servicios personales a EL EMPLEADOR en el puesto de **{{puesto}}**, con las funciones siguientes: {{funciones}}.\n\n## SEGUNDO — Duración\nEl presente contrato es por tiempo indefinido y inicia el **{{fecha_inicio}}**.\n\n## TERCERO — Lugar de trabajo\nLos servicios se prestarán en {{lugar_trabajo}}.\n\n## CUARTO — Jornada de trabajo\nLa jornada será {{horario}}, con un total de {{horas_semanales}} horas semanales. La jornada ordinaria no excederá de ocho (8) horas diarias ni de cuarenta y cuatro (44) horas semanales. Las horas trabajadas en exceso de la jornada ordinaria se pagarán con un aumento no menor del treinta y cinco por ciento (35 %) hasta sesenta y ocho (68) horas por semana, y no menor del cien por ciento (100 %) sobre esa cantidad (Ley 16-92, arts. 147, 203 y siguientes).\n\n## QUINTO — Salario\nEL EMPLEADOR pagará a EL TRABAJADOR un salario de **{{salario}}**, pagadero de forma {{periodicidad_pago}}, mediante {{forma_pago}}. Del salario se efectuarán las retenciones y aportes que dispongan las leyes (Sistema Dominicano de Seguridad Social, Impuesto Sobre la Renta e INFOTEP).\n\n## SEXTO — Descanso, vacaciones y salario de Navidad\nEL TRABAJADOR disfrutará de un descanso semanal ininterrumpido de treinta y seis (36) horas (art. 163). Después de un año de servicio ininterrumpido tendrá derecho a catorce (14) días laborables de vacaciones con disfrute de salario, y a dieciocho (18) días después de cinco años (art. 177, modificado por la Ley 97-97). Recibirá el salario de Navidad equivalente a la duodécima parte del salario ordinario devengado en el año calendario (arts. 219 a 222).\n\n## SÉPTIMO — Obligaciones de las partes\nEL TRABAJADOR cumplirá las instrucciones legítimas de EL EMPLEADOR, el reglamento interno de la empresa y guardará reserva sobre la información confidencial a la que tenga acceso. EL EMPLEADOR inscribirá a EL TRABAJADOR en el Sistema Dominicano de Seguridad Social y cumplirá las obligaciones que la ley pone a su cargo.\n\n## OCTAVO — Terminación\nEl contrato podrá terminar por las causas previstas en la Ley 16-92, incluido el desahucio con el preaviso establecido en el artículo 76 y el pago del auxilio de cesantía del artículo 80, cuando correspondan.\n\n## NOVENO — Cláusulas específicas de la empresa\n{{clausulas_empresa}}\n\n## DÉCIMO — Ley aplicable\nPara lo no previsto en el presente contrato, las partes se remiten al Código de Trabajo, su Reglamento y demás leyes laborales de la República Dominicana.\n\nHecho y firmado en {{ciudad}}, República Dominicana, el {{fecha_documento}}, en dos (2) originales de igual tenor y efecto, uno para cada parte.",
+   "code": "contrato_trabajo_indefinido",
+   "kind": "employment_contract",
+   "name": "Contrato de trabajo por tiempo indefinido",
+   "status": "published",
+   "signers": [
+    "EL EMPLEADOR",
+    "EL TRABAJADOR"
+   ],
+   "version": 1,
+   "is_system": true,
+   "variables": [
+    {
+     "key": "representante_nombre",
+     "type": "text",
+     "label": "Representante de la empresa",
+     "required": true
+    },
+    {
+     "key": "representante_cargo",
+     "type": "text",
+     "label": "Cargo del representante",
+     "required": true
+    },
+    {
+     "key": "trabajador_nombre",
+     "type": "text",
+     "label": "Nombre del trabajador",
+     "required": true
+    },
+    {
+     "key": "trabajador_nacionalidad",
+     "type": "text",
+     "label": "Nacionalidad",
+     "default": "dominicana",
+     "required": true
+    },
+    {
+     "key": "trabajador_documento",
+     "type": "text",
+     "label": "Cédula o pasaporte",
+     "required": true
+    },
+    {
+     "key": "trabajador_direccion",
+     "type": "text",
+     "label": "Domicilio del trabajador",
+     "required": true
+    },
+    {
+     "key": "puesto",
+     "type": "text",
+     "label": "Puesto",
+     "required": true
+    },
+    {
+     "key": "funciones",
+     "type": "longtext",
+     "label": "Funciones",
+     "required": true
+    },
+    {
+     "key": "fecha_inicio",
+     "type": "date",
+     "label": "Fecha de inicio",
+     "required": true
+    },
+    {
+     "key": "lugar_trabajo",
+     "type": "text",
+     "label": "Lugar de trabajo",
+     "required": true
+    },
+    {
+     "key": "horario",
+     "type": "text",
+     "label": "Horario",
+     "default": "de lunes a viernes de 8:00 a. m. a 5:00 p. m. y sábados de 8:00 a. m. a 12:00 m.",
+     "required": true
+    },
+    {
+     "key": "horas_semanales",
+     "max": 44,
+     "type": "integer",
+     "label": "Horas semanales",
+     "default": "44",
+     "required": true
+    },
+    {
+     "key": "salario",
+     "type": "money",
+     "label": "Salario",
+     "required": true
+    },
+    {
+     "key": "periodicidad_pago",
+     "type": "select",
+     "label": "Periodicidad de pago",
+     "options": [
+      "mensual",
+      "quincenal",
+      "semanal"
+     ],
+     "required": true
+    },
+    {
+     "key": "forma_pago",
+     "type": "select",
+     "label": "Forma de pago",
+     "options": [
+      "transferencia bancaria",
+      "cheque",
+      "efectivo"
+     ],
+     "required": true
+    },
+    {
+     "key": "clausulas_empresa",
+     "type": "longtext",
+     "label": "Cláusulas específicas de la empresa",
+     "default": "No se pactan cláusulas adicionales.",
+     "required": false
+    },
+    {
+     "key": "ciudad",
+     "type": "text",
+     "label": "Ciudad",
+     "default": "Santo Domingo",
+     "required": true
+    }
+   ],
+   "rule_codes": [
+    "DO.LABOR.JORNADA_PREMIUMS",
+    "DO.LABOR.VACACIONES",
+    "DO.LABOR.SALARIO_NAVIDAD",
+    "DO.LABOR.PREAVISO",
+    "DO.LABOR.CESANTIA"
+   ],
+   "description": "Contrato individual de trabajo regido por la Ley 16-92. Editable: agregue las cláusulas propias de la empresa.",
+   "business_types": [
+    "general"
+   ]
+  },
+  {
+   "id": "8995e978-1163-481f-9706-2bb12aa85dc4",
+   "body": "# CONSTANCIA DE TRABAJO\n\nA quien pueda interesar:\n\nPor medio de la presente, **{{empresa.razon_social}}**, RNC {{empresa.rnc}}, hace constar que **{{trabajador_nombre}}**, portador(a) del documento de identidad No. {{trabajador_documento}}, labora en esta empresa desde el **{{fecha_ingreso}}**, desempeñando el puesto de **{{puesto}}**, con un salario {{periodicidad}} de **{{salario}}**.\n\n{{observaciones}}\n\nLa presente constancia se expide a solicitud de la parte interesada en {{ciudad}}, República Dominicana, el {{fecha_documento}}.",
+   "code": "carta_constancia_laboral",
+   "kind": "employment_letter",
+   "name": "Carta de constancia laboral",
+   "status": "published",
+   "signers": [
+    "Recursos Humanos"
+   ],
+   "version": 1,
+   "is_system": true,
+   "variables": [
+    {
+     "key": "trabajador_nombre",
+     "type": "text",
+     "label": "Nombre del trabajador",
+     "required": true
+    },
+    {
+     "key": "trabajador_documento",
+     "type": "text",
+     "label": "Cédula o pasaporte",
+     "required": true
+    },
+    {
+     "key": "fecha_ingreso",
+     "type": "date",
+     "label": "Fecha de ingreso",
+     "required": true
+    },
+    {
+     "key": "puesto",
+     "type": "text",
+     "label": "Puesto",
+     "required": true
+    },
+    {
+     "key": "periodicidad",
+     "type": "select",
+     "label": "Salario",
+     "options": [
+      "mensual",
+      "quincenal",
+      "semanal"
+     ],
+     "required": true
+    },
+    {
+     "key": "salario",
+     "type": "money",
+     "label": "Monto del salario",
+     "required": true
+    },
+    {
+     "key": "observaciones",
+     "type": "longtext",
+     "label": "Observaciones",
+     "default": "",
+     "required": false
+    },
+    {
+     "key": "ciudad",
+     "type": "text",
+     "label": "Ciudad",
+     "default": "Santo Domingo",
+     "required": true
+    }
+   ],
+   "rule_codes": [],
+   "description": "Certifica que una persona trabaja en la empresa (bancos, embajadas, alquileres).",
+   "business_types": [
+    "general"
+   ]
+  },
+  {
+   "id": "a7ee4c6a-c3ad-4151-a5ae-5b55e6a886dd",
+   "body": "# ACUERDO DE CONFIDENCIALIDAD\n\nEntre **{{empresa.razon_social}}**, RNC {{empresa.rnc}}, en lo adelante **LA EMPRESA**, y **{{contraparte_nombre}}**, identificado(a) con {{contraparte_documento}}, en lo adelante **EL RECEPTOR**, se conviene:\n\n## PRIMERO — Información confidencial\nEs confidencial toda información técnica, comercial, financiera, de clientes, precios, diseños, accesos y sistemas que LA EMPRESA comparta con EL RECEPTOR con motivo de: {{proposito}}.\n\n## SEGUNDO — Obligaciones\nEL RECEPTOR usará la información únicamente para el propósito indicado, no la divulgará a terceros y la devolverá o destruirá cuando LA EMPRESA lo solicite.\n\n## TERCERO — Vigencia\nLas obligaciones de este acuerdo se mantienen durante {{vigencia}} a partir de su firma.\n\n## CUARTO — Cláusulas específicas\n{{clausulas_empresa}}\n\n## QUINTO — Ley aplicable\nEste acuerdo se rige por las leyes de la República Dominicana (Código Civil, art. 1134).\n\nHecho en {{ciudad}}, República Dominicana, el {{fecha_documento}}.",
+   "code": "acuerdo_confidencialidad",
+   "kind": "nda",
+   "name": "Acuerdo de confidencialidad",
+   "status": "published",
+   "signers": [
+    "LA EMPRESA",
+    "EL RECEPTOR"
+   ],
+   "version": 1,
+   "is_system": true,
+   "variables": [
+    {
+     "key": "contraparte_nombre",
+     "type": "text",
+     "label": "Receptor",
+     "required": true
+    },
+    {
+     "key": "contraparte_documento",
+     "type": "text",
+     "label": "RNC, cédula o pasaporte",
+     "required": true
+    },
+    {
+     "key": "proposito",
+     "type": "longtext",
+     "label": "Propósito",
+     "required": true
+    },
+    {
+     "key": "vigencia",
+     "type": "text",
+     "label": "Vigencia",
+     "default": "tres (3) años",
+     "required": true
+    },
+    {
+     "key": "clausulas_empresa",
+     "type": "longtext",
+     "label": "Cláusulas específicas",
+     "default": "No se pactan cláusulas adicionales.",
+     "required": false
+    },
+    {
+     "key": "ciudad",
+     "type": "text",
+     "label": "Ciudad",
+     "default": "Santo Domingo",
+     "required": true
+    }
+   ],
+   "rule_codes": [
+    "DO.CIVIL.CONTRATOS"
+   ],
+   "description": "Protege información técnica y comercial compartida con empleados, clientes o socios.",
+   "business_types": [
+    "general"
+   ]
+  },
+  {
+   "id": "2a0fd18a-4d3f-4030-854f-bdbcc628556c",
+   "body": "# CONTRATO DE PRESTACIÓN DE SERVICIOS\n\nEntre **{{empresa.razon_social}}**, RNC {{empresa.rnc}}, con domicilio en {{empresa.direccion}}, quien en lo adelante se denominará **EL PRESTADOR**; y **{{cliente_nombre}}**, identificado(a) con {{cliente_documento}}, con domicilio en {{cliente_direccion}}, quien en lo adelante se denominará **EL CLIENTE**; se ha convenido lo siguiente:\n\n## PRIMERO — Objeto\nEL PRESTADOR se obliga a realizar para EL CLIENTE los servicios siguientes: {{alcance}}.\n\n## SEGUNDO — Lugar y plazo\nLos servicios se ejecutarán en {{lugar}}, con inicio el {{fecha_inicio}} y entrega estimada el {{fecha_entrega}}.\n\n## TERCERO — Precio y forma de pago\nEL CLIENTE pagará a EL PRESTADOR la suma de **{{precio}}**, más los impuestos aplicables, en la forma siguiente: {{forma_pago}}.\n\n## CUARTO — Garantía\n{{garantia}}\n\n## QUINTO — Confidencialidad\nLas partes mantendrán la reserva de la información a la que tengan acceso con motivo de este contrato.\n\n## SEXTO — Independencia\nEL PRESTADOR actúa con autonomía técnica y no existe relación de dependencia laboral entre EL CLIENTE y el personal de EL PRESTADOR.\n\n## SÉPTIMO — Cláusulas específicas\n{{clausulas_empresa}}\n\n## OCTAVO — Ley aplicable\nEste contrato se rige por las leyes de la República Dominicana y tiene fuerza de ley entre las partes (Código Civil, art. 1134).\n\nHecho en {{ciudad}}, República Dominicana, el {{fecha_documento}}, en dos (2) originales.",
+   "code": "contrato_prestacion_servicios",
+   "kind": "service_contract",
+   "name": "Contrato de prestación de servicios",
+   "status": "published",
+   "signers": [
+    "EL PRESTADOR",
+    "EL CLIENTE"
+   ],
+   "version": 1,
+   "is_system": true,
+   "variables": [
+    {
+     "key": "cliente_nombre",
+     "type": "text",
+     "label": "Cliente",
+     "required": true
+    },
+    {
+     "key": "cliente_documento",
+     "type": "text",
+     "label": "RNC o cédula del cliente",
+     "required": true
+    },
+    {
+     "key": "cliente_direccion",
+     "type": "text",
+     "label": "Domicilio del cliente",
+     "required": true
+    },
+    {
+     "key": "alcance",
+     "type": "longtext",
+     "label": "Alcance de los servicios",
+     "required": true
+    },
+    {
+     "key": "lugar",
+     "type": "text",
+     "label": "Lugar de ejecución",
+     "required": true
+    },
+    {
+     "key": "fecha_inicio",
+     "type": "date",
+     "label": "Fecha de inicio",
+     "required": true
+    },
+    {
+     "key": "fecha_entrega",
+     "type": "date",
+     "label": "Entrega estimada",
+     "required": true
+    },
+    {
+     "key": "precio",
+     "type": "money",
+     "label": "Precio",
+     "required": true
+    },
+    {
+     "key": "forma_pago",
+     "type": "longtext",
+     "label": "Forma de pago",
+     "default": "50 % de avance a la firma y 50 % contra entrega.",
+     "required": true
+    },
+    {
+     "key": "garantia",
+     "type": "longtext",
+     "label": "Garantía",
+     "default": "EL PRESTADOR garantiza los trabajos por seis (6) meses contra defectos de instalación.",
+     "required": true
+    },
+    {
+     "key": "clausulas_empresa",
+     "type": "longtext",
+     "label": "Cláusulas específicas",
+     "default": "No se pactan cláusulas adicionales.",
+     "required": false
+    },
+    {
+     "key": "ciudad",
+     "type": "text",
+     "label": "Ciudad",
+     "default": "Santo Domingo",
+     "required": true
+    }
+   ],
+   "rule_codes": [
+    "DO.CIVIL.CONTRATOS"
+   ],
+   "description": "Para empresas de servicios y tecnología: alcance, precio, plazos, garantía y confidencialidad.",
+   "business_types": [
+    "servicios",
+    "tecnologia",
+    "construccion"
+   ]
+  },
+  {
+   "id": "3a1c9e84-ac77-4afb-8d42-159d5ad4a73a",
+   "body": "# COMUNICACIÓN DE DESAHUCIO\n\nSeñor(a) **{{trabajador_nombre}}**\nDocumento de identidad No. {{trabajador_documento}}\nPuesto: {{puesto}}\n\nPor medio de la presente, **{{empresa.razon_social}}**, RNC {{empresa.rnc}}, le comunica su decisión de poner término al contrato de trabajo que le une con la empresa, por desahucio, conforme a los artículos 75 y siguientes de la Ley 16-92.\n\nEl preaviso establecido en el artículo 76 de la Ley 16-92 comienza el **{{fecha_inicio_preaviso}}** y concluye el **{{fecha_terminacion}}**. {{modalidad_preaviso}}\n\nLas prestaciones laborales que correspondan, incluido el auxilio de cesantía del artículo 80, le serán pagadas dentro del plazo legal, según el cálculo de la nómina.\n\n{{observaciones}}\n\n{{ciudad}}, República Dominicana, {{fecha_documento}}.",
+   "code": "carta_desahucio",
+   "kind": "termination_notice",
+   "name": "Comunicación de desahucio (con preaviso)",
+   "status": "published",
+   "signers": [
+    "EL EMPLEADOR",
+    "Recibido por EL TRABAJADOR"
+   ],
+   "version": 1,
+   "is_system": true,
+   "variables": [
+    {
+     "key": "trabajador_nombre",
+     "type": "text",
+     "label": "Nombre del trabajador",
+     "required": true
+    },
+    {
+     "key": "trabajador_documento",
+     "type": "text",
+     "label": "Cédula o pasaporte",
+     "required": true
+    },
+    {
+     "key": "puesto",
+     "type": "text",
+     "label": "Puesto",
+     "required": true
+    },
+    {
+     "key": "fecha_inicio_preaviso",
+     "type": "date",
+     "label": "Inicio del preaviso",
+     "required": true
+    },
+    {
+     "key": "fecha_terminacion",
+     "type": "date",
+     "label": "Fecha de terminación",
+     "required": true
+    },
+    {
+     "key": "modalidad_preaviso",
+     "type": "select",
+     "label": "Modalidad del preaviso",
+     "options": [
+      "El preaviso será trabajado.",
+      "El preaviso no será trabajado y le será pagado con las prestaciones."
+     ],
+     "required": true
+    },
+    {
+     "key": "observaciones",
+     "type": "longtext",
+     "label": "Observaciones",
+     "default": "",
+     "required": false
+    },
+    {
+     "key": "ciudad",
+     "type": "text",
+     "label": "Ciudad",
+     "default": "Santo Domingo",
+     "required": true
+    }
+   ],
+   "rule_codes": [
+    "DO.LABOR.PREAVISO",
+    "DO.LABOR.CESANTIA"
+   ],
+   "description": "Aviso de terminación por desahucio. Los días de preaviso y la cesantía los calcula la nómina (ONE), no esta carta.",
+   "business_types": [
+    "general"
+   ]
+  },
+  {
+   "id": "5e8557dc-3206-4913-ac68-65c71ca5536a",
+   "body": "# CONSTANCIA DE RETENCIÓN DE ITBIS E ISR\n\n**{{empresa.razon_social}}**, RNC {{empresa.rnc}}, con domicilio en {{empresa.direccion}}, en su calidad de agente de retención, hace constar que durante el período **{{periodo}}** efectuó a **{{suplidor_nombre}}**, {{suplidor_tipo}}, identificado(a) con {{suplidor_documento}}, las retenciones siguientes sobre los pagos realizados:\n\n- Comprobantes fiscales (NCF / e-NCF): {{comprobantes}}\n- Fecha de pago: {{fecha_pago}}\n- Monto pagado (base): {{monto_base}}\n- ITBIS facturado: {{itbis_facturado}}\n- ITBIS retenido: {{itbis_retenido}}\n- ISR retenido: {{isr_retenido}}\n- **Total retenido: {{total_retenido}}**\n\nLos montos retenidos serán declarados y pagados a la Dirección General de Impuestos Internos (DGII) en los formularios y plazos establecidos. La presente constancia se expide a solicitud del interesado para los fines que estime convenientes.\n\n{{observaciones}}\n\nEmitida en {{ciudad}}, República Dominicana, el {{fecha_documento}}.",
+   "code": "constancia_retencion_itbis_isr",
+   "kind": "withholding_certificate",
+   "name": "Constancia de retención de ITBIS e ISR",
+   "status": "published",
+   "signers": [
+    "Agente de retención"
+   ],
+   "version": 1,
+   "is_system": true,
+   "variables": [
+    {
+     "key": "periodo",
+     "hint": "p. ej. septiembre 2026",
+     "type": "text",
+     "label": "Período",
+     "required": true
+    },
+    {
+     "key": "suplidor_nombre",
+     "type": "text",
+     "label": "Suplidor",
+     "required": true
+    },
+    {
+     "key": "suplidor_tipo",
+     "type": "select",
+     "label": "Tipo de suplidor",
+     "options": [
+      "persona física",
+      "persona jurídica"
+     ],
+     "required": true
+    },
+    {
+     "key": "suplidor_documento",
+     "type": "text",
+     "label": "RNC o cédula del suplidor",
+     "required": true
+    },
+    {
+     "key": "comprobantes",
+     "type": "longtext",
+     "label": "Comprobantes (NCF / e-NCF)",
+     "required": true
+    },
+    {
+     "key": "fecha_pago",
+     "type": "date",
+     "label": "Fecha de pago",
+     "required": true
+    },
+    {
+     "key": "monto_base",
+     "type": "money",
+     "label": "Monto pagado (base)",
+     "required": true
+    },
+    {
+     "key": "itbis_facturado",
+     "type": "money",
+     "label": "ITBIS facturado",
+     "required": true
+    },
+    {
+     "key": "itbis_retenido",
+     "type": "money",
+     "label": "ITBIS retenido",
+     "required": true
+    },
+    {
+     "key": "isr_retenido",
+     "type": "money",
+     "label": "ISR retenido",
+     "required": true
+    },
+    {
+     "of": [
+      "itbis_retenido",
+      "isr_retenido"
+     ],
+     "key": "total_retenido",
+     "type": "sum",
+     "label": "Total retenido"
+    },
+    {
+     "key": "observaciones",
+     "type": "longtext",
+     "label": "Observaciones",
+     "default": "",
+     "required": false
+    },
+    {
+     "key": "ciudad",
+     "type": "text",
+     "label": "Ciudad",
+     "default": "Santo Domingo",
+     "required": true
+    }
+   ],
+   "rule_codes": [
+    "DO.ISR.RET.PF_SERVICIOS",
+    "DO.ITBIS.RET.PF",
+    "DO.ITBIS.RET.PJ_SERVICIOS"
+   ],
+   "description": "Para suplidores personas físicas o jurídicas a quienes se retuvo ITBIS y/o ISR. Declara los montos retenidos; no calcula tasas.",
+   "business_types": [
+    "general"
+   ]
+  }
+ ],
+ "generated_from": "supabase/migrations/20260930000400_legal_documents.sql"
+}
